@@ -1,0 +1,56 @@
+.nav{
+  display: grid;
+  position: fixed;
+  margin-top: -5vw;
+  margin-right: auto;
+  margin-left: -3vw;
+ }
+  .nav div{
+    margin-left: 5px;
+    border-left: 2px solid #797979;
+    height: 20vh
+ }
+ .nav i{
+    margin-bottom: 10px;
+    font-size: 30px;
+ }
+
+
+.top{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+ }
+ .top .title{
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #797979;
+  }
+  .top .title h1{
+      color: var(--primary);
+  }
+  .top .title b, .top .title p{
+      color: var(--gray);
+  }
+
+.quote{
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid var(--primary);
+  width: 50vw;
+  padding: 15px;
+  font-style: italic;
+ }
+ .quote b{
+    font-size: 100px;
+    line-height: 0;
+ }
+
+@media (max-width: 648px) {
+    .top{
+      grid-template-columns: auto;
+    }
+    .top .title h1{
+      font-size: 20px;
+    }
+}
