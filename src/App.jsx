@@ -5,9 +5,18 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const skills = [
+    {names: ['Next js', 'Qwik', 'Node js']},
+    {names: ['React', 'Qwik-city', 'Express', 'MySQL', 'Mongodb']},
+    {names: ['HTML', 'CSS', 'Java script']},
+    {names: ['Python', 'C++', 'C', 'Java script']},
+    {names: ['React native', 'Flutter']},
+    {names: ['Figma', 'Adobe XD', 'Adobe illustrator', 'Adobe photo shop']},    
+    {names: ['Tigrigna', 'English', 'Amharic', 'French']},
+    {names: ['Git', 'Github', 'Docker', 'Agile', 'Scrum']},
+  ]
   return (
-    <>
+    <div>
       <div className="top">
         <div className="nav">
           <div></div>
@@ -67,7 +76,22 @@ function App() {
       <div className="quote">
         <h2><b>"</b>I might know developing tools but my great value is wanting to revolutionaries the world</h2><b style={{textAlign: 'right', float: 'right'}}>"</b>
       </div>
-    </>
+      <div className="skills">
+        {skills.map((skill, index)=>(
+          <div className="skill" key={index} style={{marginTop: `${2+index}px`, float: 'right'}}>
+            <p>&lt;&lt;&lt;</p>
+            <div className="names">
+              {skill.names.map(name=>(
+                <span key={name}>{name} </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <footer>
+        <p>&copy; this is made by Henok G Nov 2024</p>
+      </footer>
+    </div>
   )
 }
 

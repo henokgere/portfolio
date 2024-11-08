@@ -46,6 +46,45 @@
     line-height: 0;
  }
 
+ .skills{
+  width: 65vw;
+  margin-top: 40px;
+  float: right;
+  }
+  .skill{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1A1B1D;
+    margin-right: 5px;
+    font-family: 'Fira Code';
+    font-size: smaller;
+    font-weight: 100;
+   }
+   .skill p{
+    border-bottom: 1px solid#1A1B1D;
+    flex: 1;
+   }
+   .skill .names{
+    width: 200px;
+    min-height: 50px;
+    flex: 10;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: end;
+    margin-bottom: 0;
+    }
+    .skill .names span{
+      margin-left: 3px;
+    }
+footer{
+  position: static;
+  display: block;
+  margin-bottom: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 648px) {
     .top{
       grid-template-columns: auto;
