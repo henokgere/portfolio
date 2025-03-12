@@ -105,6 +105,7 @@
   float: left;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   }
   .contacts p {
     margin: 5px 0;
