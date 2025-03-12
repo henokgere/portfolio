@@ -2,6 +2,8 @@
 
   --primary: #C778DD;
   --gray: #1A1B1D;
+  --primary-dark: #646cff;
+  --white: #fffafa;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,11 +20,11 @@
 
 a {
   font-weight: 500;
-  color: #222224;
+  color: #fffafa9c;
   text-decoration: inherit;
 }
 a:hover {
-  color: #222224;
+  color: #fffafa;
 }
 
 body {
@@ -62,8 +64,11 @@ button:focus-visible {
     color: #213547;
     background-color: #fffafa;
   }
+  a {
+    color: #2222249f;
+  }
   a:hover {
-    color: #747bff;
+    color: #222224;
   }
   button {
     background-color: #fffafa;

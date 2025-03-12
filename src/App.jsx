@@ -1,10 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const skills = [
     {names: ['Next js', 'Qwik', 'Node js']},
     {names: ['React', 'Qwik-city', 'Express', 'MySQL', 'Mongodb']},
@@ -94,6 +90,11 @@ function App() {
         <div></div>
       </div>
       <p className='bottom'>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+      <div className="contacts">
+        <p>Email: <a href="mailto:your.henok1234gere@gmail.com">henok1234gere@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/henok-gebremedhin-74a3b3197?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/henok-gebremedhin</a></p>
+        <p>GitHub: <a href="https://github.com/henokgere" target="_blank">github.com/henokgere</a></p>
+      </div>
       <div className='footer'>
         <p>&copy; this is made by Henok G Nov 2024</p>
       </div>
