@@ -29,7 +29,6 @@ a:hover {
 
 body {
   margin: 0;
-  padding: 5vw;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -58,6 +57,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+svg circle{
+  stroke: #ffffff;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -72,5 +74,8 @@ button:focus-visible {
   }
   button {
     background-color: #fffafa;
+  }
+  svg circle{
+    stroke: #1A1B1D;
   }
 }
