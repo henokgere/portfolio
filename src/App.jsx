@@ -2,6 +2,8 @@ import { useState } from 'react';
 import './App.css'
 import Hacker from './hacker/Hacker'
 import Uiux from './ui/ux/Uiux';
+import Frontend from './frontend/Frontend';
+import Mobile from './mobile/Mobile';
 
 function App() {
   const [activePage, setActivePage] = useState('Hacker'); 
@@ -11,6 +13,10 @@ function App() {
         return <Hacker />;
       case 'Uiux':
         return <Uiux />;
+      case 'Frontend':
+        return <Frontend />;
+      case 'Mobile app':
+        return <Mobile />;
       default:
         return <Uiux />;
     }
